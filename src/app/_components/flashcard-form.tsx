@@ -117,7 +117,7 @@ export function FlashCardForm() {
 
               {inputType === "textarea" && (
                 <div className="ml-auto hidden self-end sm:inline-block">
-                  {content.length} / 20000
+                  {content.length} / 5000
                 </div>
               )}
             </div>

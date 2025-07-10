@@ -24,7 +24,7 @@ export const flashCardRouter = createTRPCRouter({
           .lte(20, "Count must not exceed 20."),
         content: z
           .string()
-          .max(20000, "Content must not exceed 20,000 characters.")
+          .max(5000, "Content must not exceed 5,000 characters.")
           .min(100, "Content must be at least 100 characters long."),
         title: z
           .string()
