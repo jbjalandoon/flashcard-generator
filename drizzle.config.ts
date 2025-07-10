@@ -8,5 +8,5 @@ export default {
   dbCredentials: {
     url: env.DATABASE_URL,
   },
-  tablesFilter: ["flashcard_*"],
+  tablesFilter: ["flashcard_*", "*"],
 } satisfies Config;

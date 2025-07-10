@@ -74,7 +74,8 @@ export const flashCardRouter = createTRPCRouter({
         await db.insert(cards).values(cardsMapping);
 
         return result!.id;
-      } catch {
+      } catch (error) {
+        console.log(error);
         throw new Error("Something went wrong");
       }
     }),
