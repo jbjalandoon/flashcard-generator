@@ -18,7 +18,6 @@ import {
 import { Button } from "~/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
 import { Alert, AlertDescription } from "~/components/ui/alert";
-import { TRPCClientError } from "@trpc/client";
 import { Input } from "~/components/ui/input";
 
 export function FlashCardForm() {

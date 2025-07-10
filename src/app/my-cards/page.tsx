@@ -9,7 +9,7 @@ import {
   PaginationItem,
   PaginationLink,
 } from "~/components/ui/pagination";
-import { auth, signIn } from "~/server/auth";
+import { auth } from "~/server/auth";
 import { api } from "~/trpc/server";
 
 export default async function Cards({
