@@ -37,8 +37,8 @@ export const flashCardRouter = createTRPCRouter({
         const { db } = ctx;
         const responses = await openai.responses.create({
           prompt: {
-            id: "pmpt_686e5bf2e3d08197bdeeb97eaf85c4330927eecce6b3ef7a",
-            version: "5",
+            id: env.OPENAI_PROMPT_ID,
+            version: env.OPENAI_PROMPT_VERSION,
             variables: {
               count: input.count.toString(),
               notes: input.content,
