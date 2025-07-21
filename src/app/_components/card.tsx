@@ -35,7 +35,12 @@ export function Card({
         >
           <div
             className="absolute flex h-full w-full flex-col items-center justify-center gap-3"
-            style={{ backfaceVisibility: "hidden" }}
+            style={{
+              backfaceVisibility: "hidden",
+              WebkitBackfaceVisibility: "hidden",
+              transform: "rotateY(0deg)",
+              WebkitTransform: "rotateY(0deg)",
+            }}
           >
             <span className="text-muted-foreground text-lg">Question</span>
             <span className="text-2xl">{question}</span>
@@ -44,7 +49,9 @@ export function Card({
             className="absolute flex h-full w-full flex-col items-center justify-center gap-3"
             style={{
               backfaceVisibility: "hidden",
+              WebkitBackfaceVisibility: "hidden",
               transform: "rotateY(180deg)",
+              WebkitTransform: "rotateY(180deg)",
             }}
           >
             <span className="text-muted-foreground text-lg">Answer</span>
